@@ -59,18 +59,18 @@ const default_configuration = {
 							icon: "binary-tree",
 							icon_color: palette.peach,
 						},
-            {
-              name: "listen.moe",
-              url: "https://listen.moe/",
-              icon: "torii",
-              icon_color: palette.blue,
-            },
-            {
-              name: "spotify",
-              url: "https://open.spotify.com",
-              icon: "brand-spotify",
-              icon_color: palette.mauve,
-            },
+						{
+							name: "listen.moe",
+							url: "https://listen.moe/",
+							icon: "torii",
+							icon_color: palette.blue,
+						},
+						{
+							name: "spotify",
+							url: "https://open.spotify.com",
+							icon: "brand-spotify",
+							icon_color: palette.mauve,
+						},
 					],
 				},
 				{
@@ -124,7 +124,7 @@ const default_configuration = {
 							icon_color: palette.red,
 						},
 						{
-              name: "discord",
+							name: "discord",
 							url: "https://dircord.com",
 							icon: "brand-discord",
 							icon_color: palette.blue,
@@ -274,12 +274,12 @@ const default_configuration = {
 							icon: "plant",
 							icon_color: palette.blue,
 						},
-            {
-              name: "webfishing",
-              url: "https://webfishing.wiki.gg/",
-              icon: "fish",
-              icon_color: palette.mauve,
-            },
+						{
+							name: "webfishing",
+							url: "https://webfishing.wiki.gg/",
+							icon: "fish",
+							icon_color: palette.mauve,
+						},
 					],
 				},
 				{
