@@ -119,7 +119,7 @@ const default_configuration = {
 						},
 						{
 							name: "Twitter",
-							url: "https://kutok.io",
+							url: "https://twitter.com",
 							icon: "brand-twitter",
 							icon_color: palette.red,
 						},
