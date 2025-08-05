@@ -10,8 +10,8 @@ let palette = initThemeSystem(preferredLightTheme, preferredDarkTheme);
 const default_configuration = {
 	overrideStorage: true,
 	temperature: {
-		location: "London",
-		scale: "C",
+		location: "Puerto Rico",
+		scale: "F",
 	},
 	clock: {
 		format: "k:i p",
@@ -27,9 +27,7 @@ const default_configuration = {
 	],
 	search: {
 		engines: {
-			p: ["https://www.perplexity.ai/search/?q=", "PerplexityAI"],
 			d: ["https://duckduckgo.com/?q=", "DuckDuckGo"],
-			g: ["https://google.com/search?q=", "Google"],
 		},
 		default: "d",
 	},
@@ -39,20 +37,20 @@ const default_configuration = {
 	disabled: [],
 	localIcons: true,
 	localFonts: true,
-	fastlink: "https://www.perplexity.ai",
+	fastlink: "https://stau.space",
 	openLastVisitedTab: true,
 	tabs: [
 		{
 			name: "myself",
-			background_url: "src/img/banners/banner_09.gif",
+			background_url: "src/img/banners/banner_04.gif",
 			categories: [
 				{
 					name: "bookmarks",
 					links: [
 						{
-							name: "raindrop",
-							url: "https://app.raindrop.io",
-							icon: "droplet-bolt",
+							name: "poolsuite",
+							url: "https://poolsuite.net/",
+							icon: "pool",
 							icon_color: palette.green,
 						},
 						{
@@ -61,33 +59,45 @@ const default_configuration = {
 							icon: "binary-tree",
 							icon_color: palette.peach,
 						},
+            {
+              name: "listen.moe",
+              url: "https://listen.moe/",
+              icon: "torii",
+              icon_color: palette.blue,
+            },
+            {
+              name: "spotify",
+              url: "https://open.spotify.com",
+              icon: "brand-spotify",
+              icon_color: palette.mauve,
+            },
 					],
 				},
 				{
 					name: "workspace",
 					links: [
 						{
-							name: "gmail",
-							url: "https://mail.google.com",
-							icon: "brand-gmail",
+							name: "proton",
+							url: "https://mail.proton.me/u/0/inbox",
+							icon: "atom",
 							icon_color: palette.green,
 						},
 						{
 							name: "calendar",
-							url: "https://calendar.google.com",
+							url: "https://calendar.proton.me/",
 							icon: "calendar-filled",
 							icon_color: palette.peach,
 						},
 						{
-							name: "sheets",
-							url: "https://docs.google.com/spreadsheets",
-							icon: "table",
+							name: "miupi",
+							url: "https://miupi.uprrp.edu",
+							icon: "books",
 							icon_color: palette.red,
 						},
 						{
-							name: "drive",
-							url: "https://drive.google.com/drive/home",
-							icon: "brand-google-drive",
+							name: "moodle",
+							url: "https://online.uprrp.edu",
+							icon: "school",
 							icon_color: palette.blue,
 						},
 					],
@@ -96,33 +106,33 @@ const default_configuration = {
 					name: "media",
 					links: [
 						{
-							name: "уп",
-							url: "https://www.pravda.com.ua",
-							icon: "news",
+							name: "WhatsApp",
+							url: "https://web.whatsapp.com",
+							icon: "brand-whatsapp",
 							icon_color: palette.green,
 						},
 						{
-							name: "mil.in.ua",
-							url: "https://mil.in.ua",
-							icon: "badge-filled",
+							name: "toki.social",
+							url: "https://toki.social",
+							icon: "brand-mastodon",
 							icon_color: palette.peach,
 						},
 						{
-							name: "куток",
+							name: "Twitter",
 							url: "https://kutok.io",
-							icon: "border-radius",
+							icon: "brand-twitter",
 							icon_color: palette.red,
 						},
 						{
-							name: "ґрунт",
-							url: "https://grnt.media",
-							icon: "eye-bolt",
+              name: "discord",
+							url: "https://dircord.com",
+							icon: "brand-discord",
 							icon_color: palette.blue,
 						},
 						{
-							name: "village",
-							url: "https://www.village.com.ua",
-							icon: "home-2",
+							name: "中日新聞",
+							url: "https://www.chunichi.co.jp/",
+							icon: "news",
 							icon_color: palette.mauve,
 						},
 					],
@@ -131,21 +141,21 @@ const default_configuration = {
 		},
 		{
 			name: "dev",
-			background_url: "src/img/banners/banner_07.gif",
+			background_url: "src/img/banners/banner_02.gif",
 			categories: [
 				{
 					name: "development",
 					links: [
 						{
-							name: "github",
-							url: "https://github.com",
-							icon: "brand-github",
+							name: "git",
+							url: "https://git.gay",
+							icon: "git-branch",
 							icon_color: palette.green,
 						},
 						{
-							name: "neptune",
-							url: "https://ui.neptune.ai",
-							icon: "circle-triangle",
+							name: "github",
+							url: "https://github.com",
+							icon: "brand-github",
 							icon_color: palette.peach,
 						},
 						{
@@ -160,21 +170,21 @@ const default_configuration = {
 					name: "challenges",
 					links: [
 						{
-							name: "kaggle",
-							url: "https://www.kaggle.com",
+							name: "codeforces",
+							url: "https://codeforces.com",
 							icon: "brain",
 							icon_color: palette.green,
 						},
 						{
 							name: "leetcode",
 							url: "https://leetcode.com",
-							icon: "code-plus",
+							icon: "brand-leetcode",
 							icon_color: palette.peach,
 						},
 						{
-							name: "exercism",
-							url: "https://exercism.org",
-							icon: "code-minus",
+							name: "HackerRank",
+							url: "https://hackerrank.com",
+							icon: "lambda",
 							icon_color: palette.red,
 						},
 						{
@@ -189,28 +199,22 @@ const default_configuration = {
 					name: "resources",
 					links: [
 						{
-							name: "dou",
-							url: "https://dou.ua",
-							icon: "brand-prisma",
+							name: "cppreference",
+							url: "https://cppreference.com",
+							icon: "brand-cpp",
 							icon_color: palette.green,
 						},
 						{
-							name: "hackernews",
-							url: "https://news.ycombinator.com",
-							icon: "brand-redhat",
+							name: "hoogle",
+							url: "https://hoogle.haskell.org",
+							icon: "math-function",
 							icon_color: palette.peach,
 						},
 						{
-							name: "uber engineering",
-							url: "https://www.uber.com/en-GB/blog/london/engineering",
-							icon: "brand-uber",
+							name: "rust docs",
+							url: "https://doc.rust-lang.org/std/",
+							icon: "file-type-rs",
 							icon_color: palette.red,
-						},
-						{
-							name: "netflix tech blog",
-							url: "https://netflixtechblog.com",
-							icon: "brand-netflix",
-							icon_color: palette.blue,
 						},
 					],
 				},
@@ -224,21 +228,21 @@ const default_configuration = {
 					name: "social media",
 					links: [
 						{
-							name: "telegram",
-							url: "https://web.telegram.org",
-							icon: "brand-telegram",
+							name: "YouTube",
+							url: "https://youtube.com",
+							icon: "brand-youtube",
 							icon_color: palette.green,
 						},
 						{
-							name: "facebook",
-							url: "https://www.facebook.com",
-							icon: "brand-facebook",
+							name: "BMK",
+							url: "https://bmk.neocities.org/",
+							icon: "relation-one-to-many",
 							icon_color: palette.peach,
 						},
 						{
-							name: "reddit",
-							url: "https://www.reddit.com/r/unixporn",
-							icon: "brand-reddit",
+							name: "hackernews",
+							url: "https://news.ycombinator.com",
+							icon: "brand-redhat",
 							icon_color: palette.red,
 						},
 					],
@@ -247,9 +251,9 @@ const default_configuration = {
 					name: "gaming",
 					links: [
 						{
-							name: "IGN",
-							url: "https://www.ign.com/account/playlist/library",
-							icon: "device-gamepad",
+							name: "osu!",
+							url: "https://osu.ppy.sh",
+							icon: "route",
 							icon_color: palette.green,
 						},
 						{
@@ -259,17 +263,23 @@ const default_configuration = {
 							icon_color: palette.peach,
 						},
 						{
-							name: "epicgames",
-							url: "https://store.epicgames.com",
-							icon: "brand-fortnite",
+							name: "GGST",
+							url: "https://guiltygear.fandom.com/wiki/Guilty_Gear_Wiki",
+							icon: "karate",
 							icon_color: palette.red,
 						},
 						{
-							name: "nintendo",
-							url: "https://store.nintendo.co.uk",
-							icon: "device-nintendo",
+							name: "stardew",
+							url: "https://stardewvalley.fandom.com/wiki/Stardew_Valley_Wiki",
+							icon: "plant",
 							icon_color: palette.blue,
 						},
+            {
+              name: "webfishing",
+              url: "https://webfishing.wiki.gg/",
+              icon: "fish",
+              icon_color: palette.mauve,
+            },
 					],
 				},
 				{
@@ -288,14 +298,14 @@ const default_configuration = {
 							icon_color: palette.peach,
 						},
 						{
-							name: "patreon",
-							url: "https://www.patreon.com",
-							icon: "brand-patreon",
+							name: "crunchyroll",
+							url: "https://crunchyroll.com",
+							icon: "brand-funimation",
 							icon_color: palette.red,
 						},
 						{
-							name: "kyivstar",
-							url: "https://tv.kyivstar.ua",
+							name: "anichart",
+							url: "https://anichart.net/Summer-2025",
 							icon: "star-filled",
 							icon_color: palette.blue,
 						},
